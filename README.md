@@ -82,27 +82,49 @@ Frontend (to be developed later):
 
 ## Project Structure
 
-backend/
-├── controllers/
-├── services/
-│ └── riskEngine/
-├── repositories/
-├── middleware/
-├── routes/
-├── prisma/
-├── config/
-├── app.js
-└── server.js
+```
+.
+├── idea.md
+├── useCaseDiagram.md
+├── sequenceDiagram.md
+├── classDiagram.md
+├── ErDiagram.md
+├── README.md
+│
+└── backend/
+    ├── controllers/
+    │   ├── authController.js
+    │   ├── promptController.js
+    │   └── policyController.js
+    │
+    ├── services/
+    │   ├── promptService.js
+    │   ├── policyService.js
+    │   └── riskEngine/
+    │       ├── riskEvaluator.js
+    │       └── ruleBasedRiskEvaluator.js
+    │
+    ├── repositories/
+    │   ├── userRepository.js
+    │   ├── promptRepository.js
+    │   └── policyRepository.js
+    │
+    ├── middleware/
+    │   └── authMiddleware.js
+    │
+    ├── routes/
+    │   └── index.js
+    │
+    ├── prisma/
+    │   └── schema.prisma
+    │
+    ├── config/
+    │   └── index.js
+    │
+    ├── app.js
+    └── server.js
+```
 
-
-Documentation files:
-- idea.md
-- useCaseDiagram.md
-- sequenceDiagram.md
-- classDiagram.md
-- ErDiagram.md
-
----
 
 ## Current Status
 
